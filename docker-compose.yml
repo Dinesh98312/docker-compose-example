@@ -8,9 +8,10 @@ services:
     build: my-frontend
   my-backend:
     build: my-backend
-    environment:
-      - ConnectionStrings__Default
+    env_file:
+      - /home/ubuntu/docker-compose-example/.env
   my-database:
     build: my-database
-    environment:
-      - MYSQL_ROOT_PASSWORD
+    env_file:
+      - /home/ubuntu/docker-compose-example/.env
+    
