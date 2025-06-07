@@ -10,8 +10,4 @@ services:
     build: my-backend
     env_file:
       - /home/ubuntu/docker-compose-example/.env
-  my-database:
-    build: my-database
-    env_file:
-      - /home/ubuntu/docker-compose-example/.env
-    
+  
