@@ -3,7 +3,7 @@ services:
   my-proxy:
     build: my-proxy
     ports:
-      - "8080:80"
+      - "80:80"
   my-frontend:
     build: my-frontend
   my-backend:
